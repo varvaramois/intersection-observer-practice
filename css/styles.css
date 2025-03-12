@@ -1,0 +1,58 @@
+/* body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    background-color: rgb(217, 76, 217);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 30px;
+    transition: all 250ms ease-in-out;
+    transform: scale(0.1);
+}
+.visible {
+    background-color: brown;
+    transform: scale(1);
+} */
+
+/* Використовуючи CSS, розташуйте кожен елемент li в рядок, так щоб вони займали всю ширину сторінки та мали однакову ширину та висоту. */
+.fruits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 1000px;
+}
+.fruits-list li {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+.fruits-list img {
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.fruits-list h3 {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
