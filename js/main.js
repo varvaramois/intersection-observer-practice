@@ -22,11 +22,11 @@ function getCats(elements) {
         const img = element.target.querySelector("img");
         const text = element.target.querySelector("h3");
         if (element.isIntersecting) {
-            img.src = img.getAttribute("data-alt-src");
+            img.src = img.dataset.altSrc;
             text.style.color = "red";
         } else {
-            img.src = img.getAttribute("src");
-            text.style.color = "black";
+            img.src = img.dataset.src;
+            text.style.color = "green";
         }
     })
 }
